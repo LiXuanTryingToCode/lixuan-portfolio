@@ -23,12 +23,7 @@ const Contact = () => {
     setLoading(true);
 
     // Send email with EmailJS
-    emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      e.target,
-      process.env.REACT_APP_PUBLIC_KEY
-    )
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target,process.env.REACT_APP_PUBLIC_KEY)
       .then(() => {
         console.log('Message sent successfully');
         alert('Message sent successfully');
