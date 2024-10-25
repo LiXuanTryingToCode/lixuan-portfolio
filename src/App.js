@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Experience/>
 
+    {/* I cincai add */}
       <Contact/>
     </div>
   );
